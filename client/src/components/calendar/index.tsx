@@ -35,12 +35,12 @@ interface User {
 
 // Sample data for users and events
 const users: User[] = [
-  { id: "1", name: "John Smith", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/men/1.jpg" },
-  { id: "2", name: "Emma Johnson", role: "Designer", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
-  { id: "3", name: "Michael Brown", role: "Developer", avatar: "https://randomuser.me/api/portraits/men/2.jpg" },
-  { id: "4", name: "Sarah Wilson", role: "Marketing", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
-  { id: "5", name: "David Lee", role: "Developer", avatar: "https://randomuser.me/api/portraits/men/3.jpg" },
-  { id: "6", name: "Laura Chen", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
+  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
+  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
+  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
+  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/4.jpg" },
+  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "https://randomuser.me/api/portraits/women/5.jpg" },
+  { id: "6", name: "Team Member", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/6.jpg" },
 ];
 
 const today = new Date();
@@ -55,10 +55,10 @@ const sampleEvents: CalendarEvent[] = [
     location: "Conference Room A",
     type: "meeting",
     attendees: [
-      { id: "1", name: "John Smith" },
-      { id: "2", name: "Emma Johnson" },
-      { id: "3", name: "Michael Brown" },
-      { id: "4", name: "Sarah Wilson" },
+      { id: "1", name: "Sahana Priya S" },
+      { id: "2", name: "Thulasi Priya S" },
+      { id: "3", name: "Darshini P" },
+      { id: "4", name: "Shruthi M S" },
     ]
   },
   {
@@ -79,8 +79,8 @@ const sampleEvents: CalendarEvent[] = [
     location: "Virtual (Zoom)",
     type: "meeting",
     attendees: [
-      { id: "1", name: "John Smith" },
-      { id: "4", name: "Sarah Wilson" },
+      { id: "1", name: "Sahana Priya S" },
+      { id: "4", name: "Shruthi M S" },
     ]
   },
   {
@@ -101,9 +101,9 @@ const sampleEvents: CalendarEvent[] = [
     description: "Review new design mockups with the team",
     type: "meeting",
     attendees: [
-      { id: "1", name: "John Smith" },
-      { id: "2", name: "Emma Johnson" },
-      { id: "5", name: "David Lee" },
+      { id: "1", name: "Sahana Priya S" },
+      { id: "2", name: "Thulasi Priya S" },
+      { id: "5", name: "Shruti T" },
     ]
   },
   {
@@ -124,9 +124,9 @@ const sampleEvents: CalendarEvent[] = [
     description: "Present the new features to the stakeholders",
     type: "meeting",
     attendees: [
-      { id: "1", name: "John Smith" },
-      { id: "3", name: "Michael Brown" },
-      { id: "5", name: "David Lee" },
+      { id: "1", name: "Sahana Priya S" },
+      { id: "3", name: "Darshini P" },
+      { id: "5", name: "Shruti T" },
     ]
   },
   {
@@ -158,7 +158,7 @@ const sampleEvents: CalendarEvent[] = [
     description: "Plan the budget for the next quarter",
     type: "meeting",
     attendees: [
-      { id: "1", name: "John Smith" },
+      { id: "1", name: "Sahana Priya S" },
     ]
   },
 ];

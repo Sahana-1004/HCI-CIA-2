@@ -52,10 +52,11 @@ interface Project {
 
 // Sample data
 const users: User[] = [
-  { id: "1", name: "John Smith", avatar: "https://randomuser.me/api/portraits/men/1.jpg", role: "Project Manager" },
-  { id: "2", name: "Emma Johnson", avatar: "https://randomuser.me/api/portraits/women/1.jpg", role: "Designer" },
-  { id: "3", name: "Michael Brown", avatar: "https://randomuser.me/api/portraits/men/2.jpg", role: "Developer" },
-  { id: "4", name: "Sarah Wilson", avatar: "https://randomuser.me/api/portraits/women/2.jpg", role: "Marketing" },
+  { id: "1", name: "Sahana Priya S", avatar: "https://randomuser.me/api/portraits/women/1.jpg", role: "Project Manager" },
+  { id: "2", name: "Thulasi Priya S", avatar: "https://randomuser.me/api/portraits/women/2.jpg", role: "Developer" },
+  { id: "3", name: "Darshini P", avatar: "https://randomuser.me/api/portraits/women/3.jpg", role: "UI Designer" },
+  { id: "4", name: "Shruthi M S", avatar: "https://randomuser.me/api/portraits/women/4.jpg", role: "Project Manager" },
+  { id: "5", name: "Shruti T", avatar: "https://randomuser.me/api/portraits/women/5.jpg", role: "QA Tester" },
 ];
 
 const projects: Project[] = [
