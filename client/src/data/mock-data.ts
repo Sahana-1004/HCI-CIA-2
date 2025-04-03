@@ -6,7 +6,7 @@ export const mockUsers: ChatUser[] = [
     id: "current-user",
     name: "Sahana Priya S",
     role: "Project Manager",
-    avatar: "",
+    avatar: "", 
     initials: "SP",
     status: "online"
   },
