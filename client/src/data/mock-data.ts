@@ -4,14 +4,14 @@ import { ChatUser, ChatConversation, ChatMessage } from "@/context/chat-context"
 export const mockUsers: ChatUser[] = [
   {
     id: "current-user",
-    name: "John Smith",
+    name: "Sahana Priya S",
     role: "Project Manager",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     status: "online"
   },
   {
     id: "user-1",
-    name: "Michael Chen",
+    name: "Thulasi Priya S",
     role: "Developer",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     status: "away",
@@ -19,21 +19,21 @@ export const mockUsers: ChatUser[] = [
   },
   {
     id: "user-2",
-    name: "Sarah Johnson",
+    name: "Darshini P",
     role: "UI Designer",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     status: "online"
   },
   {
     id: "user-3",
-    name: "Lisa Rodriguez",
+    name: "Shruthi M S",
     role: "Project Manager",
     avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     status: "online"
   },
   {
     id: "user-4",
-    name: "David Kim",
+    name: "Shruti T",
     role: "QA Tester",
     avatar: "https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     status: "away",
@@ -54,10 +54,10 @@ export const mockChatConversations: ChatConversation[] = [
   {
     id: "conv-1",
     type: "private",
-    name: "Michael Chen",
+    name: "Thulasi Priya S",
     participants: [mockUsers[0], mockUsers[1]],
     lastMessage: {
-      sender: "Michael Chen",
+      sender: "Thulasi Priya S",
       content: "Can you review my PR when you get a chance?",
       timestamp: new Date(Date.now() - 86400000), // yesterday
       read: false
@@ -82,10 +82,10 @@ export const mockChatConversations: ChatConversation[] = [
   {
     id: "conv-3",
     type: "private",
-    name: "Sarah Johnson",
+    name: "Darshini P",
     participants: [mockUsers[0], mockUsers[2]],
     lastMessage: {
-      sender: "Sarah Johnson",
+      sender: "Darshini P",
       content: "Thanks for your help with the design review!",
       timestamp: new Date(Date.now() - 2 * 86400000), // 2 days ago
       read: true
@@ -113,7 +113,7 @@ export const mockChatConversations: ChatConversation[] = [
     name: "Project Managers",
     participants: [mockUsers[0], mockUsers[3]],
     lastMessage: {
-      sender: "John Smith",
+      sender: "Sahana Priya S",
       content: "Please update your timesheets by EOD",
       timestamp: new Date(Date.now() - 3 * 86400000), // 3 days ago
       read: true
@@ -125,12 +125,12 @@ export const mockChatConversations: ChatConversation[] = [
 
 // Mock Chat Messages
 export const mockChatMessages: ChatMessage[] = [
-  // Michael Chen conversation
+  // Thulasi Priya S conversation
   {
     id: "msg-1",
     conversationId: "conv-1",
     senderId: "user-1",
-    content: "Hey John, can you review my PR when you get a chance? It's the fix for that UI bug we discussed yesterday.",
+    content: "Hey Sahana, can you review my PR when you get a chance? It's the fix for that UI bug we discussed yesterday.",
     timestamp: new Date(Date.now() - 86400000 - 3600000), // yesterday, 1 hour earlier
     read: true,
     type: "text"
@@ -166,11 +166,11 @@ export const mockChatMessages: ChatMessage[] = [
     id: "msg-5",
     conversationId: "conv-1",
     senderId: "user-1",
-    content: "Thanks @John! I'll fix that issue today. By the way, are you joining the design review meeting at 2pm?",
+    content: "Thanks @Sahana! I'll fix that issue today. By the way, are you joining the design review meeting at 2pm?",
     timestamp: new Date(Date.now() - 20400000), // 5.5 hours ago
     read: true,
     type: "text",
-    mentions: ["John"]
+    mentions: ["Sahana"]
   },
   {
     id: "msg-6",
@@ -322,7 +322,7 @@ export const projectSuccessData = [
 export const workloadData = [
   {
     id: "1",
-    name: "Sarah Johnson",
+    name: "Darshini P",
     role: "UI Designer",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     workload: 65,
@@ -330,7 +330,7 @@ export const workloadData = [
   },
   {
     id: "2",
-    name: "Michael Chen",
+    name: "Thulasi Priya S",
     role: "Developer",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     workload: 90,
@@ -338,7 +338,7 @@ export const workloadData = [
   },
   {
     id: "3",
-    name: "Lisa Rodriguez",
+    name: "Shruthi M S",
     role: "Project Manager",
     avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     workload: 78,
@@ -346,7 +346,7 @@ export const workloadData = [
   },
   {
     id: "4",
-    name: "David Kim",
+    name: "Shruti T",
     role: "QA Tester",
     avatar: "https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     workload: 45,
