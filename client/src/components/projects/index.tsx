@@ -55,35 +55,35 @@ interface Client {
 
 // Sample data
 const users: User[] = [
-  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
-  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
-  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
-  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/4.jpg" },
-  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "https://randomuser.me/api/portraits/women/5.jpg" },
-  { id: "6", name: "Alex Wilson", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/6.jpg" },
+  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "" },
+  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "" },
+  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "" },
+  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "" },
+  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "" },
+  { id: "6", name: "Darshini P", role: "Content Writer", avatar: "" },
 ];
 
 const clients: Client[] = [
   { 
     id: "1", 
-    name: "Robert Williams", 
+    name: "Sahana Priya S", 
     company: "Acme Inc", 
-    avatar: "https://randomuser.me/api/portraits/men/11.jpg",
-    email: "robert@acmeinc.com" 
+    avatar: "",
+    email: "sahana@acmeinc.com" 
   },
   { 
     id: "2", 
-    name: "Jessica Brown", 
+    name: "Thulasi Priya S", 
     company: "XYZ Corporation", 
-    avatar: "https://randomuser.me/api/portraits/women/11.jpg",
-    email: "jessica@xyzcorp.com" 
+    avatar: "",
+    email: "thulasi@xyzcorp.com" 
   },
   { 
     id: "3", 
-    name: "Thomas Anderson", 
+    name: "Shruthi M S", 
     company: "Matrix Enterprises", 
-    avatar: "https://randomuser.me/api/portraits/men/12.jpg",
-    email: "thomas@matrix.com" 
+    avatar: "",
+    email: "shruthi@matrix.com" 
   },
 ];
 
