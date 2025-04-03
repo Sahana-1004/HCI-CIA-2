@@ -19,32 +19,32 @@ type WorkspaceItem = {
 const navItems: NavItem[] = [
   {
     label: "Dashboard",
-    href: "#dashboard",
+    href: "/dashboard",
     icon: <Home className="w-5 h-5" />,
   },
   {
     label: "Chat",
-    href: "#chat",
+    href: "/chat",
     icon: <MessageSquare className="w-5 h-5" />,
   },
   {
     label: "Tasks",
-    href: "#tasks",
+    href: "/tasks",
     icon: <CheckSquare className="w-5 h-5" />,
   },
   {
     label: "Projects",
-    href: "#projects",
+    href: "/projects",
     icon: <FolderKanban className="w-5 h-5" />,
   },
   {
     label: "Calendar",
-    href: "#calendar",
+    href: "/calendar",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     label: "Reports",
-    href: "#reports",
+    href: "/reports",
     icon: <BarChart3 className="w-5 h-5" />,
   },
 ];
@@ -129,17 +129,14 @@ export function Sidebar() {
               <ul className="mt-2 space-y-1">
                 {workspaces.map((workspace) => (
                   <li key={workspace.name}>
-                    <div
-                      className="flex items-center space-x-2 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
-                      onClick={() => window.location.hash = "#workspace"}
-                    >
-                      <div
-                        className={`w-5 h-5 rounded ${workspace.color} flex items-center justify-center text-white text-xs`}
-                      >
-                        {workspace.initials}
+                    <Link href="/workspace">
+                      <div className="flex items-center space-x-2 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                        <div className={`w-5 h-5 rounded ${workspace.color} flex items-center justify-center text-white text-xs`}>
+                          {workspace.initials}
+                        </div>
+                        <span className="text-sm">{workspace.name}</span>
                       </div>
-                      <span className="text-sm">{workspace.name}</span>
-                    </div>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -150,23 +147,25 @@ export function Sidebar() {
 
       {/* User Profile */}
       <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.location.hash = "#profile"}>
-          <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt="User profile"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          {isExpanded && (
-            <div>
-              <p className="text-sm font-medium">John Smith</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Project Manager
-              </p>
+        <Link href="/profile">
+          <div className="flex items-center space-x-2 cursor-pointer">
+            <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt="User profile"
+                className="w-full h-full object-cover"
+              />
             </div>
-          )}
-        </div>
+            {isExpanded && (
+              <div>
+                <p className="text-sm font-medium">John Smith</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">
+                  Project Manager
+                </p>
+              </div>
+            )}
+          </div>
+        </Link>
       </div>
     </div>
   );
