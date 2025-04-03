@@ -13,33 +13,33 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Sarah Johnson",
+    name: "Darshini P",
     role: "UI Designer",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
     workload: 65,
     status: "Good"
   },
   {
     id: "2",
-    name: "Michael Chen",
+    name: "Thulasi Priya S",
     role: "Developer",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
     workload: 90,
     status: "Overloaded"
   },
   {
     id: "3",
-    name: "Lisa Rodriguez",
+    name: "Shruthi M S",
     role: "Project Manager",
-    avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
     workload: 78,
     status: "Heavy"
   },
   {
     id: "4",
-    name: "David Kim",
+    name: "Shruti T",
     role: "QA Tester",
-    avatar: "https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
     workload: 45,
     status: "Available"
   }
