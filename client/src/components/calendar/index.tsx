@@ -31,16 +31,17 @@ interface User {
   name: string;
   avatar?: string;
   role?: string;
+  initials?: string;
 }
 
 // Sample data for users and events
 const users: User[] = [
-  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
-  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
-  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
-  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/4.jpg" },
-  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "https://randomuser.me/api/portraits/women/5.jpg" },
-  { id: "6", name: "Team Member", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/6.jpg" },
+  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "", initials: "SP" },
+  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "", initials: "TP" },
+  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "", initials: "DP" },
+  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "", initials: "SM" },
+  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "", initials: "ST" },
+  { id: "6", name: "Darshini P", role: "Content Writer", avatar: "", initials: "DP" },
 ];
 
 const today = new Date();
@@ -505,7 +506,7 @@ export function CalendarView() {
                           <div className="flex items-center">
                             <Avatar className="h-6 w-6 mr-2">
                               <AvatarImage src={user.avatar} alt={user.name} />
-                              <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
+                              <AvatarFallback>{user.initials || getInitials(user.name)}</AvatarFallback>
                             </Avatar>
                             {user.name} {user.role ? `(${user.role})` : ''}
                           </div>
@@ -524,7 +525,7 @@ export function CalendarView() {
                           <Badge variant="secondary" key={id} className="flex items-center gap-1">
                             <Avatar className="h-4 w-4">
                               <AvatarImage src={user.avatar} alt={user.name} />
-                              <AvatarFallback className="text-[8px]">{getInitials(user.name)}</AvatarFallback>
+                              <AvatarFallback className="text-[8px]">{user.initials || getInitials(user.name)}</AvatarFallback>
                             </Avatar>
                             {user.name}
                             <Button
@@ -701,7 +702,9 @@ export function CalendarView() {
                                       <Badge variant="secondary" key={attendee.id} className="flex items-center gap-1">
                                         <Avatar className="h-4 w-4">
                                           <AvatarImage src={user?.avatar} alt={attendee.name} />
-                                          <AvatarFallback className="text-[8px]">{getInitials(attendee.name)}</AvatarFallback>
+                                          <AvatarFallback className="text-[8px]">
+                                            {user?.initials || getInitials(attendee.name)}
+                                          </AvatarFallback>
                                         </Avatar>
                                         {attendee.name}
                                       </Badge>
