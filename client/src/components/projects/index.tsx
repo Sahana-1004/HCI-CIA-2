@@ -43,6 +43,7 @@ interface User {
   name: string;
   role: string;
   avatar?: string;
+  initials?: string;
 }
 
 interface Client {
@@ -50,17 +51,18 @@ interface Client {
   name: string;
   company: string;
   avatar?: string;
+  initials?: string;
   email: string;
 }
 
 // Sample data
 const users: User[] = [
-  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "" },
-  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "" },
-  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "" },
-  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "" },
-  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "" },
-  { id: "6", name: "Darshini P", role: "Content Writer", avatar: "" },
+  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "", initials: "SP" },
+  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "", initials: "TP" },
+  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "", initials: "DP" },
+  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "", initials: "SM" },
+  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "", initials: "ST" },
+  { id: "6", name: "Darshini P", role: "Content Writer", avatar: "", initials: "DP" },
 ];
 
 const clients: Client[] = [
@@ -69,6 +71,7 @@ const clients: Client[] = [
     name: "Sahana Priya S", 
     company: "Acme Inc", 
     avatar: "",
+    initials: "SP",
     email: "sahana@acmeinc.com" 
   },
   { 
@@ -76,6 +79,7 @@ const clients: Client[] = [
     name: "Thulasi Priya S", 
     company: "XYZ Corporation", 
     avatar: "",
+    initials: "TP",
     email: "thulasi@xyzcorp.com" 
   },
   { 
@@ -83,6 +87,7 @@ const clients: Client[] = [
     name: "Shruthi M S", 
     company: "Matrix Enterprises", 
     avatar: "",
+    initials: "SM",
     email: "shruthi@matrix.com" 
   },
 ];
@@ -456,7 +461,7 @@ export function ProjectsView() {
                           <div className="flex items-center">
                             <Avatar className="h-6 w-6 mr-2">
                               <AvatarImage src={client.avatar} alt={client.name} />
-                              <AvatarFallback>{getInitials(client.name)}</AvatarFallback>
+                              <AvatarFallback>{client.initials || getInitials(client.name)}</AvatarFallback>
                             </Avatar>
                             {client.name} ({client.company})
                           </div>
@@ -692,7 +697,7 @@ export function ProjectsView() {
                       {project.teamMembers.slice(0, 4).map(member => (
                         <Avatar key={member.id} className="h-7 w-7 border-2 border-white dark:border-gray-800">
                           <AvatarImage src={member.avatar} alt={member.name} />
-                          <AvatarFallback>{getInitials(member.name)}</AvatarFallback>
+                          <AvatarFallback>{member.initials || getInitials(member.name)}</AvatarFallback>
                         </Avatar>
                       ))}
                       {project.teamMembers.length > 4 && (
@@ -775,7 +780,7 @@ export function ProjectsView() {
                             {project.teamMembers.slice(0, 3).map(member => (
                               <Avatar key={member.id} className="h-6 w-6 border-2 border-white dark:border-gray-800">
                                 <AvatarImage src={member.avatar} alt={member.name} />
-                                <AvatarFallback>{getInitials(member.name)}</AvatarFallback>
+                                <AvatarFallback>{member.initials || getInitials(member.name)}</AvatarFallback>
                               </Avatar>
                             ))}
                             {project.teamMembers.length > 3 && (
@@ -817,7 +822,7 @@ export function ProjectsView() {
                           <div className="flex items-center gap-2">
                             <Avatar className="h-5 w-5">
                               <AvatarImage src={project.client.avatar} alt={project.client.name} />
-                              <AvatarFallback>{getInitials(project.client.name)}</AvatarFallback>
+                              <AvatarFallback>{project.client.initials || getInitials(project.client.name)}</AvatarFallback>
                             </Avatar>
                             <span className="text-sm">{project.client.name} ({project.client.company})</span>
                           </div>
