@@ -3,6 +3,7 @@ import { Home, MessageSquare, CheckSquare, FolderKanban, Calendar, BarChart3, Ch
 import { cn } from "@/lib/utils";
 import { useSidebar } from "@/hooks/use-sidebar";
 import { getInitials } from "@/lib/utils";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 type NavItem = {
   label: string;
@@ -145,27 +146,37 @@ export function Sidebar() {
         )}
       </nav>
 
+      {/* Theme Switcher */}
+      {isExpanded && (
+        <div className="flex justify-center p-4 border-t border-gray-200 dark:border-gray-700">
+          <ThemeSwitcher />
+        </div>
+      )}
+      
       {/* User Profile */}
       <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-        <Link href="/profile">
-          <div className="flex items-center space-x-2 cursor-pointer">
-            <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt="User profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {isExpanded && (
-              <div>
-                <p className="text-sm font-medium">John Smith</p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  Project Manager
-                </p>
+        <div className="flex items-center justify-between">
+          <Link href="/profile">
+            <div className="flex items-center space-x-2 cursor-pointer">
+              <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="User profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
-            )}
-          </div>
-        </Link>
+              {isExpanded && (
+                <div>
+                  <p className="text-sm font-medium">John Smith</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Project Manager
+                  </p>
+                </div>
+              )}
+            </div>
+          </Link>
+          {!isExpanded && <ThemeSwitcher />}
+        </div>
       </div>
     </div>
   );
