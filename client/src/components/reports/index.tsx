@@ -30,11 +30,11 @@ const monthlyData = [
 ];
 
 const teamPerformanceData = [
-  { name: "John", value: 87, color: "#3b82f6" },
-  { name: "Emma", value: 92, color: "#10b981" },
-  { name: "Michael", value: 76, color: "#f59e0b" },
-  { name: "Sarah", value: 83, color: "#8b5cf6" },
-  { name: "David", value: 79, color: "#ef4444" },
+  { name: "Sahana Priya S", value: 87, color: "#3b82f6" },
+  { name: "Thulasi Priya S", value: 92, color: "#10b981" },
+  { name: "Darshini P", value: 76, color: "#f59e0b" },
+  { name: "Shruthi M S", value: 83, color: "#8b5cf6" },
+  { name: "Shruti T", value: 79, color: "#ef4444" },
 ];
 
 const projectStatusData = [
