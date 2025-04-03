@@ -55,12 +55,12 @@ interface Client {
 
 // Sample data
 const users: User[] = [
-  { id: "1", name: "John Smith", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/men/1.jpg" },
-  { id: "2", name: "Emma Johnson", role: "Designer", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
-  { id: "3", name: "Michael Brown", role: "Developer", avatar: "https://randomuser.me/api/portraits/men/2.jpg" },
-  { id: "4", name: "Sarah Wilson", role: "Marketing", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
-  { id: "5", name: "David Lee", role: "Developer", avatar: "https://randomuser.me/api/portraits/men/3.jpg" },
-  { id: "6", name: "Laura Chen", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
+  { id: "1", name: "Sahana Priya S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
+  { id: "2", name: "Thulasi Priya S", role: "Developer", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
+  { id: "3", name: "Darshini P", role: "UI Designer", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
+  { id: "4", name: "Shruthi M S", role: "Project Manager", avatar: "https://randomuser.me/api/portraits/women/4.jpg" },
+  { id: "5", name: "Shruti T", role: "QA Tester", avatar: "https://randomuser.me/api/portraits/women/5.jpg" },
+  { id: "6", name: "Alex Wilson", role: "Content Writer", avatar: "https://randomuser.me/api/portraits/women/6.jpg" },
 ];
 
 const clients: Client[] = [

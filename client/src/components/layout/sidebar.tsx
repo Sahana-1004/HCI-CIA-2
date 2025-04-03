@@ -167,7 +167,7 @@ export function Sidebar() {
               </div>
               {isExpanded && (
                 <div>
-                  <p className="text-sm font-medium">John Smith</p>
+                  <p className="text-sm font-medium">Sahana Priya S</p>
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     Project Manager
                   </p>
