@@ -1,5 +1,9 @@
 import { Dashboard } from "@/components/dashboard";
 import { Chat } from "@/components/chat";
+import { CalendarView } from "@/components/calendar";
+import { TaskManagement } from "@/components/tasks";
+import { ProjectsView } from "@/components/projects";
+import { ReportsView } from "@/components/reports";
 
 export function DashboardPage() {
   return <Dashboard />;
@@ -10,55 +14,19 @@ export function ChatPage() {
 }
 
 export function TasksPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Tasks</h1>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-        <p className="text-gray-500 dark:text-gray-400">
-          Task management functionality will be implemented in a future update.
-        </p>
-      </div>
-    </div>
-  );
+  return <TaskManagement />;
 }
 
 export function ProjectsPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Projects</h1>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-        <p className="text-gray-500 dark:text-gray-400">
-          Project management functionality will be implemented in a future update.
-        </p>
-      </div>
-    </div>
-  );
+  return <ProjectsView />;
 }
 
 export function CalendarPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Calendar</h1>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-        <p className="text-gray-500 dark:text-gray-400">
-          Calendar functionality will be implemented in a future update.
-        </p>
-      </div>
-    </div>
-  );
+  return <CalendarView />;
 }
 
 export function ReportsPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Reports</h1>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-        <p className="text-gray-500 dark:text-gray-400">
-          Reporting functionality will be implemented in a future update.
-        </p>
-      </div>
-    </div>
-  );
+  return <ReportsView />;
 }
 
 export function WorkspacePage() {
