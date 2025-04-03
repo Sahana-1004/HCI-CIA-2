@@ -6,14 +6,16 @@ export const mockUsers: ChatUser[] = [
     id: "current-user",
     name: "Sahana Priya S",
     role: "Project Manager",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
+    initials: "SP",
     status: "online"
   },
   {
     id: "user-1",
     name: "Thulasi Priya S",
     role: "Developer",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
+    initials: "TP", 
     status: "away",
     lastActive: "35 min ago"
   },
@@ -21,30 +23,33 @@ export const mockUsers: ChatUser[] = [
     id: "user-2",
     name: "Darshini P",
     role: "UI Designer",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
+    initials: "DP",
     status: "online"
   },
   {
     id: "user-3",
     name: "Shruthi M S",
     role: "Project Manager",
-    avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
+    initials: "SM",
     status: "online"
   },
   {
     id: "user-4",
     name: "Shruti T",
     role: "QA Tester",
-    avatar: "https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    avatar: "",
+    initials: "ST",
     status: "away",
     lastActive: "2 hours ago"
   },
   {
     id: "user-5",
-    name: "Alex Wilson",
+    name: "Darshini P",
     role: "Designer",
     avatar: "",
-    initials: "AW",
+    initials: "DP",
     status: "online"
   }
 ];
@@ -71,7 +76,7 @@ export const mockChatConversations: ChatConversation[] = [
     name: "Design Team",
     participants: [mockUsers[0], mockUsers[2], mockUsers[4], mockUsers[5]],
     lastMessage: {
-      sender: "Alex Wilson",
+      sender: "Darshini P",
       content: "I've uploaded the new mockups to Figma",
       timestamp: new Date(Date.now() - 5400000), // 1.5 hours ago
       read: true
@@ -99,7 +104,7 @@ export const mockChatConversations: ChatConversation[] = [
     name: "Marketing Team",
     participants: [mockUsers[0], mockUsers[3], mockUsers[4]],
     lastMessage: {
-      sender: "Jessica",
+      sender: "Shruti T",
       content: "Let's discuss the Q3 campaign next week",
       timestamp: new Date(Date.now() - 86400000), // yesterday
       read: true
@@ -229,11 +234,11 @@ export const mockChatMessages: ChatMessage[] = [
     id: "msg-11",
     conversationId: "conv-2",
     senderId: "user-2",
-    content: "Yes, I'll prepare some mockups for that. @Alex, do you want to collaborate on this?",
+    content: "Yes, I'll prepare some mockups for that. @Darshini, do you want to collaborate on this?",
     timestamp: new Date(Date.now() - 172600000), // 2 days ago, a bit later
     read: true,
     type: "text",
-    mentions: ["Alex"]
+    mentions: ["Darshini"]
   },
   {
     id: "msg-12",
