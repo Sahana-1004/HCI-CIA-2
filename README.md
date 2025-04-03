@@ -1,4 +1,4 @@
-# Design Explanation Document
+![Screenshot 2025-04-03 134249](https://github.com/user-attachments/assets/2338804d-997a-4348-b3c2-ff70788fc626)# Design Explanation Document
 
 ## UI/UX Decisions
 
@@ -29,7 +29,8 @@ The implemented charts and statistics provide users with valuable insights into 
 - Stay motivated by tracking progress visually, which can enhance productivity.
 
 ### Sample Output Images
-
+![Screenshot 2025-04-03 134249](https://github.com/user-attachments/assets/bdd8fda9-ee31-4723-b7d9-4d080bb4ee55)
+![Screenshot 2025-04-03 134311](https://github.com/user-attachments/assets/ca9c23d5-c4bf-4f39-9281-27e342c0b47d)
 ![localhost_5000_dashboard (1)](https://github.com/user-attachments/assets/254749fa-1e18-4a6e-8ca4-e0300c71977d)
 ![localhost_5000_dashboard (9)](https://github.com/user-attachments/assets/e0b5282f-c568-4656-808a-600c08054af2)
 ![localhost_5000_dashboard (4)](https://github.com/user-attachments/assets/14be2005-ea38-40d1-b264-3478fefde175)
