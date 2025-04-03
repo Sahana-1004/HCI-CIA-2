@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useChat, ChatConversation } from "@/context/chat-context";
+import { ChatConversation } from "@/context/chat-context";
+import { useChat } from "@/hooks/use-chat";
 import { cn, getInitials, getRelativeTime } from "@/lib/utils";
 
 export function ChatSidebar() {

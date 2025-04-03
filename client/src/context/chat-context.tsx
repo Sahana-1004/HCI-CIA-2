@@ -58,7 +58,7 @@ interface ChatContextType {
   currentFilter: "all" | "private" | "group";
 }
 
-const ChatContext = createContext<ChatContextType | undefined>(undefined);
+export const ChatContext = createContext<ChatContextType | undefined>(undefined);
 
 export function ChatProvider({ children }: { children: React.ReactNode }) {
   const [conversations, setConversations] = useState<ChatConversation[]>(mockChatConversations);
