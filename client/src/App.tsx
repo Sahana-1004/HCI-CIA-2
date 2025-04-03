@@ -16,6 +16,8 @@ import {
   ProfilePage
 } from "@/pages/dashboard-pages";
 import { useEffect } from "react";
+import { ThemeProvider } from "@/context/theme-provider";
+import { SidebarProvider } from "@/context/sidebar-context";
 
 // Hash route handler - redirects hash routes to proper paths
 function HashRouteHandler() {
@@ -65,11 +67,15 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouteHandler />
-      <AppLayout>
-        <Router />
-      </AppLayout>
-      <Toaster />
+      <ThemeProvider>
+        <SidebarProvider>
+          <HashRouteHandler />
+          <AppLayout>
+            <Router />
+          </AppLayout>
+          <Toaster />
+        </SidebarProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }
