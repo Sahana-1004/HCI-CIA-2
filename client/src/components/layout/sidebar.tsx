@@ -153,26 +153,9 @@ export function Sidebar() {
         </div>
       )}
       
-      {/* User Profile */}
+      {/* Theme Switcher (Collapsed) */}
       <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="flex items-center justify-between">
-          <Link href="/profile">
-            <div className="flex items-center space-x-2 cursor-pointer">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-medium">
-                SP
-              </div>
-              {isExpanded && (
-                <div>
-                  <p className="text-sm font-medium">Sahana Priya S</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
-                    Project Manager
-                  </p>
-                </div>
-              )}
-            </div>
-          </Link>
-          {!isExpanded && <ThemeSwitcher />}
-        </div>
+        {!isExpanded && <ThemeSwitcher />}
       </div>
     </div>
   );
