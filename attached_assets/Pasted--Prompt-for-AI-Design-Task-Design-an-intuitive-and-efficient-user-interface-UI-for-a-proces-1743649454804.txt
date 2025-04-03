@@ -1,0 +1,30 @@
+**Prompt for AI Design Task:**
+
+Design an intuitive and efficient user interface (UI) for a process planning software that incorporates an interactive chat system and comprehensive statistical dashboards. The UI should prioritize usability, accessibility, and effective data visualization while integrating the following features:
+
+1. **Interactive Chat System:**
+   - Enable private and group messaging functionalities.
+   - Facilitate meeting scheduling and room allocation.
+   - Implement tagged notifications for user mentions in conversations.
+   - Include message prioritization options, allowing users to flag messages as urgent or important.
+   - Integrate a smart search functionality to quickly locate past conversations and critical information.
+
+2. **Statistical Dashboards:**
+   - Create visual representations for key metrics, including:
+     - **Pending Work Tracker:** 
+       - Use a bar chart or pie chart to display pending tasks categorized by priority levels (High, Medium, Low).
+     - **Performance Improvement Analysis:** 
+       - Develop a line chart to track individual performance trends over time, considering metrics like task completion rates, efficiency, or feedback scores.
+     - **Completed Work Overview:** 
+       - Design a stacked bar chart visualizing completed tasks categorized by project or task types (e.g., Bugs Fixed, Features Developed, Documents Completed).
+     - **Notifications Dashboard:** 
+       - Categorize notifications (Mentions, Meeting Reminders, Deadlines, Project Updates) using a donut chart or a timeline chart.
+     - **Workload Distribution Analysis:** 
+       - Implement a heatmap to visualize workload distribution across teams and time periods to identify overworked employees and optimize resource allocation.
+     - **Project Success and Failure Analytics:** 
+       - Use comparative bar charts to illustrate success and failure rates of different projects, providing insights for root cause analysis to enhance project management strategies.
+
+3. **Accessibility Features:**
+   - Include options for dark mode, font size adjustments, screen reader support, and keyboard shortcuts to ensure the UI is user-friendly for all individuals.
+
+Your task is to create and prototype this UI, selecting any front-end framework of your choice. Submit your design along with a detailed explanation of its features and the benefits it offers in terms of usability and accessibility.
