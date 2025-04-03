@@ -3,7 +3,8 @@ import { Phone, Video, Info, Paperclip, AtSign, Flag, Send, Smile } from "lucide
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useChat, ChatMessage, ChatUser } from "@/context/chat-context";
+import { ChatMessage, ChatUser } from "@/context/chat-context";
+import { useChat } from "@/hooks/use-chat";
 import { MessageItem } from "./message-item";
 import { getRelativeTime } from "@/lib/utils";
 

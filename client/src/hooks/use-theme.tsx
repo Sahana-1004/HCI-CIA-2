@@ -1,5 +1,13 @@
-import { useTheme as useThemeContext } from "@/context/theme-provider";
+import { useTheme as useThemeContext, ThemeContext } from "@/context/theme-provider";
 
 export const useTheme = () => {
-  return useThemeContext();
+  try {
+    return useThemeContext();
+  } catch (e) {
+    // Return default values if context is not available
+    return {
+      theme: "light" as const,
+      setTheme: () => {}
+    };
+  }
 };
