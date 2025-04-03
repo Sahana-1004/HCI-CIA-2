@@ -12,8 +12,8 @@ interface MessageItemProps {
 
 export function MessageItem({ message, isCurrentUser, participants }: MessageItemProps) {
   const sender = isCurrentUser 
-    ? { name: "You", avatar: "" } 
-    : participants.find(p => p.id === message.senderId) || { name: "Unknown", avatar: "" };
+    ? { name: "You", avatar: "", initials: "SP" } 
+    : participants.find(p => p.id === message.senderId) || { name: "Unknown", avatar: "", initials: "" };
   
   const formattedTime = message.timestamp.toLocaleTimeString([], { 
     hour: '2-digit', 
@@ -64,7 +64,7 @@ export function MessageItem({ message, isCurrentUser, participants }: MessageIte
       {!isCurrentUser && (
         <Avatar className="h-8 w-8 mr-3">
           <AvatarImage src={sender.avatar} alt={sender.name} />
-          <AvatarFallback>{sender.name.charAt(0)}</AvatarFallback>
+          <AvatarFallback>{sender.initials || sender.name.charAt(0)}</AvatarFallback>
         </Avatar>
       )}
       
