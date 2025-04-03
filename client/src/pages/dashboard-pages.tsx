@@ -1,0 +1,88 @@
+import { Dashboard } from "@/components/dashboard";
+import { Chat } from "@/components/chat";
+
+export function DashboardPage() {
+  return <Dashboard />;
+}
+
+export function ChatPage() {
+  return <Chat />;
+}
+
+export function TasksPage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Tasks</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          Task management functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function ProjectsPage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          Project management functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function CalendarPage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Calendar</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          Calendar functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function ReportsPage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Reports</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          Reporting functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function WorkspacePage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Workspace</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          Workspace functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function ProfilePage() {
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">User Profile</h1>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <p className="text-gray-500 dark:text-gray-400">
+          User profile functionality will be implemented in a future update.
+        </p>
+      </div>
+    </div>
+  );
+}
